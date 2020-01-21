@@ -1,0 +1,12 @@
+.landing {
+  background-color: $clr-bg;
+  font-family: $ff-main, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing__hero {
+  font-size: 3em;
+}
