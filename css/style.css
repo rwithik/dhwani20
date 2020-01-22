@@ -32,7 +32,7 @@ section {
 }
 
 .landing {
-  background-color: #3d3d3d;
+  background-color: #2c2e43;
   font-family: "Forty Seconds", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,8 +50,13 @@ section {
   color: white;
 }
 
+.landing__logo {
+  z-index: 1;
+}
+
 .landing__logo img {
   max-height: 300px;
+  z-index: 2;
 }
 
 .landing__coming-soon {
@@ -59,6 +64,12 @@ section {
   -webkit-transform: scaleX(1.1);
           transform: scaleX(1.1);
   text-shadow: 2px 2px black;
+}
+
+#particles-js {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 .landing__hero {

@@ -1,7 +1,7 @@
 $clr-text-shadow: black;
 
 .landing {
-  background-color: $clr-bg;
+  background-color: #2c2e43;
   font-family: $ff-main, sans-serif;
   display: flex;
   flex-direction: column;
@@ -9,11 +9,16 @@ $clr-text-shadow: black;
   align-items: center;
   color: white;
 
-  &__logo img {
-    max-height: 300px;
-    // filter: drop-shadow(5px 5px 0.75rem $clr-gold)
-    //   drop-shadow(-5px -5px 1rem $clr-gold);
-    // animation: logo-shadow 2s linear infinite alternate;
+  &__logo {
+    z-index: 1;
+
+    img {
+      max-height: 300px;
+      z-index: 2;
+      // filter: drop-shadow(5px 5px 0.75rem $clr-gold)
+      //   drop-shadow(-5px -5px 1rem $clr-gold);
+      // animation: logo-shadow 2s linear infinite alternate;
+    }
   }
 
   &__coming-soon {
@@ -21,6 +26,12 @@ $clr-text-shadow: black;
     transform: scaleX(1.1);
     text-shadow: 2px 2px $clr-text-shadow;
   }
+}
+
+#particles-js {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 .landing__hero {
