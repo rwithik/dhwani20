@@ -55,7 +55,7 @@ section {
 }
 
 .landing__logo img {
-  max-height: 300px;
+  max-height: 230px;
   z-index: 2;
 }
 
@@ -73,7 +73,7 @@ section {
 }
 
 .landing__hero {
-  font-size: 2em;
+  font-size: 1.5em;
   position: relative;
   text-shadow: 5px 5px black;
   display: -webkit-box;
@@ -143,7 +143,7 @@ section {
 
 @media only screen and (min-width: 450px) {
   .landing__hero {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 /*# sourceMappingURL=style.css.map */

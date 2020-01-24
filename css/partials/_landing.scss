@@ -13,7 +13,7 @@ $clr-text-shadow: black;
     z-index: 1;
 
     img {
-      max-height: 300px;
+      max-height: 230px;
       z-index: 2;
       // filter: drop-shadow(5px 5px 0.75rem $clr-gold)
       //   drop-shadow(-5px -5px 1rem $clr-gold);
@@ -35,7 +35,7 @@ $clr-text-shadow: black;
 }
 
 .landing__hero {
-  font-size: 2em;
+  font-size: 1.5em;
   position: relative;
   text-shadow: 5px 5px $clr-text-shadow;
   display: flex;
@@ -95,6 +95,6 @@ $clr-text-shadow: black;
 
 @media only screen and (min-width: 450px) {
   .landing__hero {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
