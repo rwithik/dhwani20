@@ -1,35 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dhwani ’20</title>
-    <link rel="stylesheet" href="./dist/css/style.min.css" />
+    <title>Dhwani '20</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <section class="landing">
-      <div id="particles-js"></div>
-      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-      <div class="landing__logo">
-        <img src="./images/dhwani20logo.png" alt="" />
-      </div>
-      <h1 class="landing__hero">
-        <span class="hero__text">D</span>
-        <span class="hero__text">H</span>
-        <span class="hero__text">W</span>
-        <span class="hero__text">A</span>
-        <span class="hero__text">N</span>
-        <span class="hero__text">I</span>
-        &nbsp;
-        <span class="hero__text">’</span>
-        <span class="hero__text">2</span>
-        <span class="hero__text">0</span>
-      </h1>
-      <h2 class="landing__coming-soon">
-        March 12, 13, 14, 15
-      </h2>
-    </section>
-    <script src="./js/script.js"></script>
+
+    <!-- SCRIPT FOR BACKGROUND ANIMATION -->
+    <div id="particles-js"></div>
+    <script src="./dist/three.r95.min.js"></script>
+    <script src="./dist/vanta.birds.min.js"></script>
+    <script>
+      VANTA.BIRDS({
+        el: "#particles-js",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundAlpha: 0.91
+      })
+    </script>
+
+    <!-- REST OF THE STUFFS -->
+    
+    <img class="landing__logo" src="./images/dhwani20logo.png" alt="" />
+    <div class="date">
+      <p>March</p>
+      <p>12,13,14</p>
+    </div>
+
+    <div class="college-name">
+      <p>College of Engineering Trivandrum</p>
+    </div>
+    
+    <div class="about-year" id="section1">
+      <h2>20</h2>
+    </div>
+
+    <div class="about" id="section1">
+      <h2>dhwani</h2>
+    </div>
+    
+    <div class="welcome" id="section2">
+      <h2>Section 2</h2>
+      <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+    </div>
   </body>
 </html>
