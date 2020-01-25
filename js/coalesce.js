@@ -12,9 +12,9 @@ const rangeSize = 10;
 const baseHue = 300;
 const rangeHue = 10;
 const noiseSteps = 2;
-const xOff = 0.0025;
-const yOff = 0.005;
-const zOff = 0.0005;
+const xOff = 0.025;
+const yOff = 0.05;
+const zOff = 0.005;
 const backgroundColor = "hsla(60,50%,3%,1)";
 
 let container;

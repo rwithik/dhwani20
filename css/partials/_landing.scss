@@ -12,13 +12,13 @@ $clr-text-shadow: black;
 
   &__logo {
     margin-top: -4rem;
-    z-index: 1;
+    z-index: 110;
     right: 1rem;
     bottom: 1rem;
     background-color: rgba(black, 0.1);
     img {
       max-height: 180px;
-      z-index: 2;
+      z-index: 210;
       // filter: drop-shadow(5px 5px 0.75rem $clr-gold)
       //   drop-shadow(-5px -5px 1rem $clr-gold);
       // animation: logo-shadow 2s linear infinite alternate;
@@ -30,7 +30,7 @@ $clr-text-shadow: black;
   &__coming-soon {
     font-family: $ff-sub;
     // transform: scale(0.85);
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     // text-shadow: 2px 2px $clr-text-shadow;
   }
 }
