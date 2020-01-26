@@ -192,7 +192,7 @@ body {
 .landing__logo {
   position: absolute;
   max-height: 230px;
-  right: 1rem;
+  right: -3.5rem;
   position: -webkit-sticky; /* Safari */
   top: 0;
 }
@@ -221,8 +221,8 @@ body {
 
 .date-year {
   position: absolute;
-  bottom: 10px;
-  left: 10rem;
+  bottom: 3.5rem;
+  left: 12rem;
 }
 
 .landing__date {
@@ -253,15 +253,16 @@ body {
   letter-spacing: 10px;
   opacity: 0.9;
   font-size: 3em;
-  bottom: 30px;
+  bottom: 5rem;
+  left: 5rem;
 }
 .landing__college {
   font-family: "bebaskai";
   letter-spacing: 2px;
   color: rgba(255, 255, 255, 0.7);
   position: absolute;
-  bottom: 30px;
-  right: 1rem;
+  bottom: 5rem;
+  right: 3rem;
 }
 /* } */
 
