@@ -25,60 +25,60 @@ body {
 }
 
 /* Screen size for computers */
-@media only screen and (min-width: 961px) {
-  .section {
-    text-align: center;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-  }
-  .controlArrow.prev {
-    left: 50px;
-  }
-  .controlArrow.next {
-    right: 50px;
-  }
+/* @media only screen and (min-width: 961px) { */
+.section {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.controlArrow.prev {
+  left: 50px;
+}
+.controlArrow.next {
+  right: 50px;
+}
 
-  #infoMenu li a {
-    color: #fff;
-  }
-  .section,
-  .slide {
-    top: 0;
-    left: 0;
-    visibility: visible;
-    overflow: hidden;
-    /* width: 100%;
+#infoMenu li a {
+  color: #fff;
+}
+.section,
+.slide {
+  top: 0;
+  left: 0;
+  visibility: visible;
+  overflow: hidden;
+  /* width: 100%;
     height: 100%; */
-    opacity: 1;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
-    -ms-perspective: 1000;
-    perspective: 1000;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 
-  .intro {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    position: relative;
-  }
-  /* .intro-dhwani {
+.intro {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+}
+/* .intro-dhwani {
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -86,7 +86,7 @@ body {
     background-position: top center;
     position: relative;
   } */
-  /* .intro-dhwani {
+/* .intro-dhwani {
     font-size: 7em;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
@@ -100,57 +100,57 @@ body {
     left: -2rem;
   } */
 
-  .section--about {
-    display: flex;
-  }
+.section--about {
+  display: flex;
+}
 
-  .intro-about {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    position: absolute;
-  }
-  .intro-about h1 {
-    font-size: 7em;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    color: white;
-    font-family: "bebaskai";
-    letter-spacing: 10px;
-    opacity: 0.9;
-    margin-top: 15%;
-    margin-left: 5%;
-  }
-  .about-description p {
-    font-size: 1em;
-    color: white;
-    font-family: "bebaskai";
-    letter-spacing: 10px;
-    opacity: 0.9;
-    margin-left: 5%;
-  }
-  .intro-events {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    position: relative;
-  }
-  .intro-events h1 {
-    font-size: 7em;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    color: white;
-    font-family: "bebaskai";
-    letter-spacing: 10px;
-    opacity: 0.9;
-    margin-top: 65%;
-    margin-left: 5%;
-  }
-  /* .dhwani-year {
+.intro-about {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: absolute;
+}
+.intro-about h1 {
+  font-size: 7em;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  color: white;
+  font-family: "bebaskai";
+  letter-spacing: 10px;
+  opacity: 0.9;
+  margin-top: 15%;
+  margin-left: 5%;
+}
+.about-description p {
+  font-size: 1em;
+  color: white;
+  font-family: "bebaskai";
+  letter-spacing: 10px;
+  opacity: 0.9;
+  margin-left: 5%;
+}
+.intro-events {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+}
+.intro-events h1 {
+  font-size: 7em;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  color: white;
+  font-family: "bebaskai";
+  letter-spacing: 10px;
+  opacity: 0.9;
+  margin-top: 65%;
+  margin-left: 5%;
+}
+/* .dhwani-year {
     position: absolute;
     color: grey;
     font-size: 7em;
@@ -160,43 +160,43 @@ body {
     left: 15rem;
     z-index: 1;
   } */
-  .intro p {
-    color: #222;
-  }
+.intro p {
+  color: #222;
+}
 
-  #section1 {
-    background-color: #1f2e41;
-  }
-  #section2 {
-    background-color: #1f2e41;
-  }
-  #section3 {
-    background-color: #1f2e41;
-  }
-  #section0 .intro {
-    background-image: url("");
-  }
-  #section1 .intro {
-    background-image: url("");
-  }
-  #section2 .intro {
-    background-image: url("");
-  }
-  #particles-js {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-  }
+#section1 {
+  background-color: #1f2e41;
+}
+#section2 {
+  background-color: #1f2e41;
+}
+#section3 {
+  background-color: #1f2e41;
+}
+#section0 .intro {
+  background-image: url("");
+}
+#section1 .intro {
+  background-image: url("");
+}
+#section2 .intro {
+  background-image: url("");
+}
+#particles-js {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
 
-  .landing__logo {
-    position: absolute;
-    max-height: 230px;
-    right: 1rem;
-    position: -webkit-sticky; /* Safari */
-    top: 0;
-  }
-  /* .date {
+.landing__logo {
+  position: absolute;
+  max-height: 230px;
+  right: 1rem;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+}
+/* .date {
     position: absolute;
     font-size: 2em;
     font-family: "matthan-sans";
@@ -219,51 +219,51 @@ body {
     right: 5rem;
   } */
 
-  .date-year {
-    position: absolute;
-    bottom: 10px;
-    left: 10rem;
-  }
-
-  .landing__date {
-    font-size: 2em;
-    line-height: 90%;
-    color: white;
-    letter-spacing: 3px;
-    line-height: 90%;
-    opacity: 0.7;
-    margin-bottom: 0.4rem;
-    font-family: "matthan-sans";
-  }
-
-  .landing__year {
-    color: grey;
-    font-size: 4em;
-    font-family: "matthan-sans";
-    letter-spacing: 3px;
-    z-index: 1;
-  }
-
-  .landing__dhwani {
-    position: absolute;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    color: white;
-    font-family: "bebaskai";
-    letter-spacing: 10px;
-    opacity: 0.9;
-    font-size: 3em;
-    bottom: 30px;
-  }
-  .landing__college {
-    font-family: "bebaskai";
-    letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.7);
-    position: absolute;
-    bottom: 30px;
-    right: 1rem;
-  }
+.date-year {
+  position: absolute;
+  bottom: 10px;
+  left: 10rem;
 }
+
+.landing__date {
+  font-size: 2em;
+  line-height: 90%;
+  color: white;
+  letter-spacing: 3px;
+  line-height: 90%;
+  opacity: 0.7;
+  margin-bottom: 0.4rem;
+  font-family: "matthan-sans";
+}
+
+.landing__year {
+  color: grey;
+  font-size: 4em;
+  font-family: "matthan-sans";
+  letter-spacing: 3px;
+  z-index: 1;
+}
+
+.landing__dhwani {
+  position: absolute;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: white;
+  font-family: "bebaskai";
+  letter-spacing: 10px;
+  opacity: 0.9;
+  font-size: 3em;
+  bottom: 30px;
+}
+.landing__college {
+  font-family: "bebaskai";
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  bottom: 30px;
+  right: 1rem;
+}
+/* } */
 
 /* Scree size for tablets */
 @media only screen and (min-width: 460px) and (max-width: 960px) {
@@ -611,7 +611,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
   }
-  .date {
+  /* .date {
     position: absolute;
     font-size: 1.5em;
     font-family: "matthan-sans";
@@ -632,5 +632,23 @@ body {
     letter-spacing: 0.1px;
     line-height: 90%;
     opacity: 0.7;
+  } */
+
+  .landing__dhwani {
+    font-size: 3em;
+  }
+
+  .date-year {
+    left: 7rem;
+    bottom: 30px;
+  }
+
+  .landing__date {
+    font-size: 1.5em;
+  }
+
+  .landing__college {
+    left: 7rem;
+    right: auto;
   }
 }
