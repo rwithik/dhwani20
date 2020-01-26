@@ -125,23 +125,16 @@ body {
   margin-left: 5%;
 }
 .intro-events {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  position: relative;
-}
-.intro-events h1 {
-  font-size: 7em;
+  position: absolute;
+  font-size: 3em;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   color: white;
   font-family: "bebaskai";
   letter-spacing: 10px;
   opacity: 0.9;
-  margin-top: 65%;
-  margin-left: 5%;
+  bottom: 5rem;
+  left: 5rem;
 }
 /* .dhwani-year {
     position: absolute;
