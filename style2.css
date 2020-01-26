@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "matthan-sans-italic";
+  src: url("./dist/fonts/matthan\ sans\ italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "matthan-sans";
+  src: url("./dist/fonts/matthan\ sans\ regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "bebaskai";
+  src: url("./dist/fonts/bebaskai-regular.otf") format("truetype");
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  min-height: 100vh;
+}
+
+#particles-js {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+#particle-js canvas {
+  min-height: 100vh;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dhwani 20</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
+    />
+    <link rel="stylesheet" href="./style2.css" />
+  </head>
+  <body>
+    <div id="fullpage">
+      <section class="landing">
+        <div id="particle-js"></div>
+        <div class="section" id="section0">
+          <script src="./dist/three.r95.min.js"></script>
+          <script src="./dist/vanta.birds.min.js"></script>
+          <script>
+            VANTA.BIRDS({
+              el: "#particles-js",
+              mouseControls: true,
+              touchControls: true,
+              minHeight: 200.0,
+              minWidth: 200.0,
+              scale: 1.0,
+              scaleMobile: 1.0,
+              backgroundAlpha: 0.91,
+              speedLimit: 3
+            });
+          </script>
+
+          <img class="landing__logo" src="./images/dhwani20logo.png" alt="" />
+          <div class="date">
+            <p>March</p>
+            <p>12,13,14,15</p>
+          </div>
+          <div class="college-name">
+            <p>College of Engineering Trivandrum</p>
+          </div>
+          <div class="dhwani-year">
+            <h1>20</h1>
+          </div>
+          <div class="intro-dhwani">
+            <h1>DHWANI</h1>
+          </div>
+          <div id="fill-color"></div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
