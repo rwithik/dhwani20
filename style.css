@@ -105,23 +105,16 @@ body {
 }
 
 .intro-about {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
   position: absolute;
-}
-.intro-about h1 {
-  font-size: 7em;
+  font-size: 3em;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   color: white;
   font-family: "bebaskai";
   letter-spacing: 10px;
   opacity: 0.9;
-  margin-top: 15%;
-  margin-left: 5%;
+  bottom: 5rem;
+  left: 5rem;
 }
 .about-description p {
   font-size: 1em;
@@ -528,6 +521,7 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     position: absolute;
+    background-color: red;
   }
   .intro-about h1 {
     font-size: 5em;
