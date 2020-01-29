@@ -154,6 +154,20 @@ a {
   cursor: url("../../images/spray.png"), pointer;
 }
 
+.arrow a {
+  color: white;
+  font-family: "Lato", "sans-serif";
+  font-size: 2rem;
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+}
+
 .workshops,
 .events,
 .proshows,
