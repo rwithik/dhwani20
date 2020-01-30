@@ -31,6 +31,30 @@ a {
   color: black;
 }
 
+.background {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-image: url("../../images/wall\ art.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  z-index: 0;
+}
+
+.workshops,
+.events,
+.proshows,
+.contact {
+  background-color: rgba(7, 0, 24, 0.5);
+}
+
+.section__container {
+  width: 80%;
+  margin-left: auto;
+}
+
 .section__title {
   position: sticky;
   font-family: "Lato", "sans-serif";
@@ -42,6 +66,7 @@ a {
   display: inline-block;
   // width: 50%;
   transform: rotate(180deg) translateX(-50%);
+  color: rgba(white, 0.6);
 }
 
 .nav {
@@ -81,19 +106,17 @@ a {
 
     .nav__link {
       color: black;
-      background-image: linear-gradient(to right, gold, black);
     }
   }
 
   &__link {
     color: white;
-    background-image: linear-gradient(to right, gold, white);
     background-clip: text;
 
     &:hover,
     &:focus,
     &:focus-within {
-      color: transparent;
+      color: gold;
     }
   }
 }
@@ -168,26 +191,10 @@ a {
   }
 }
 
-.workshops,
-.events,
-.proshows,
-.contact {
-  background-color: rgb(7, 0, 24);
-}
-
-.section__title {
-  color: rgba(white, 0.6);
-}
-
 .coming-soon {
   font-family: "Montserrat", "sans-serif";
   color: rgba(white, 0.9);
   font-size: 3em;
-}
-
-.section__container {
-  width: 80%;
-  margin-left: auto;
 }
 
 @media only screen and (max-width: 450px) {

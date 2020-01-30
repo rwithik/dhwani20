@@ -32,6 +32,31 @@ a {
   color: black;
 }
 
+.background {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-image: url("../../images/wall art.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  z-index: 0;
+}
+
+.workshops,
+.events,
+.proshows,
+.contact {
+  background-color: rgba(7, 0, 24, 0.5);
+}
+
+.section__container {
+  width: 80%;
+  margin-left: auto;
+}
+
 .section__title {
   position: -webkit-sticky;
   position: sticky;
@@ -46,6 +71,7 @@ a {
   display: inline-block;
   -webkit-transform: rotate(180deg) translateX(-50%);
           transform: rotate(180deg) translateX(-50%);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .nav {
@@ -106,19 +132,15 @@ a {
 
 .nav--active .nav__link {
   color: black;
-  background-image: -webkit-gradient(linear, left top, right top, from(gold), to(black));
-  background-image: linear-gradient(to right, gold, black);
 }
 
 .nav__link {
   color: white;
-  background-image: -webkit-gradient(linear, left top, right top, from(gold), to(white));
-  background-image: linear-gradient(to right, gold, white);
   background-clip: text;
 }
 
 .nav__link:hover, .nav__link:focus, .nav__link:focus-within {
-  color: transparent;
+  color: gold;
 }
 
 .hamburger__toggle {
@@ -168,26 +190,10 @@ a {
   z-index: 10;
 }
 
-.workshops,
-.events,
-.proshows,
-.contact {
-  background-color: #070018;
-}
-
-.section__title {
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .coming-soon {
   font-family: "Montserrat", "sans-serif";
   color: rgba(255, 255, 255, 0.9);
   font-size: 3em;
-}
-
-.section__container {
-  width: 80%;
-  margin-left: auto;
 }
 
 @media only screen and (max-width: 450px) {
