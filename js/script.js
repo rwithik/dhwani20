@@ -37,19 +37,6 @@ const hamburgerToggle = document.querySelector(".hamburger__toggle");
 const hamburger = document.querySelector(".hamburger");
 const navList = document.querySelector(".nav__list");
 
-hamburgerToggle.addEventListener("click", () => {
-  hamburger.classList.toggle("hamburger--close");
-  navList.classList.toggle("nav__list--open");
-});
-
-const navItems = document.querySelectorAll(".nav__item");
-navItems.forEach(item => {
-  item.addEventListener("click", () => {
-    hamburger.classList.remove("hamburger--close");
-    navList.classList.remove("nav__list--open");
-  });
-});
-
 // Active nav stuff
 
 const nav = document.querySelector(".nav");
@@ -64,10 +51,43 @@ const landingObserver = new IntersectionObserver(
         nav.classList.add("nav--active");
       }
     });
-  },
-  {
-    rootMargin: "-100px"
   }
+  // {
+  // rootMargin: "-100px"
+  // }
 );
 
 landingObserver.observe(landing);
+
+// Gif replacement code
+
+// const gif = document.querySelector(".logo__gif");
+// const image = document.querySelector(".logo__img");
+// const logoSection = document.querySelector("section.logo");
+
+// const gifObserver = new IntersectionObserver((entries, observer) => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       console.log("asd");
+
+//       image.classList.add("hide");
+//       gif.classList.remove("hide");
+//       observer.unobserve(entry);
+//     }
+//   });
+// });
+
+// gifObserver.observe(logoSection);
+
+hamburgerToggle.addEventListener("click", () => {
+  hamburger.classList.toggle("hamburger--close");
+  navList.classList.toggle("nav__list--open");
+});
+
+const navItems = document.querySelectorAll(".nav__item");
+navItems.forEach(item => {
+  item.addEventListener("click", () => {
+    hamburger.classList.remove("hamburger--close");
+    navList.classList.remove("nav__list--open");
+  });
+});

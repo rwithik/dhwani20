@@ -44,6 +44,7 @@ a {
 }
 
 .workshops,
+.logo,
 .events,
 .proshows,
 .contact {
@@ -70,7 +71,7 @@ a {
 }
 
 .nav {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -86,8 +87,9 @@ a {
   }
 
   &__list {
-    font-family: "Montserrat", "sans-serif";
+    // font-family: "Raleway", sans-serif;
 
+    font-family: "Work Sans", Arial, sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -97,16 +99,17 @@ a {
   }
 
   &__item {
-    font-variant-caps: small-caps;
+    // font-variant-caps: small-caps;
   }
   &--active {
-    background-color: #fff;
-
+    display: flex;
+    // background-color: #fff;
+    background-color: #9f8f4f3d;
     box-shadow: 0 5px 5px rgba(22, 34, 26, 0.4);
 
-    .nav__link {
-      color: black;
-    }
+    // .nav__link {
+    //   color: white;
+    // }
   }
 
   &__link {
@@ -178,10 +181,10 @@ a {
   //   right: 100%;
   // }
   a {
-    color: white;
+    display: none;
+    color: black;
     font-family: "Lato", "sans-serif";
     font-size: 2rem;
-    display: inline-block;
     width: auto;
     position: absolute;
     bottom: 1rem;
@@ -195,6 +198,27 @@ a {
   font-family: "Montserrat", "sans-serif";
   color: rgba(white, 0.9);
   font-size: 3em;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__gif,
+  &__img {
+    display: block;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.hide {
+  display: none;
 }
 
 @media only screen and (max-width: 450px) {
@@ -276,5 +300,8 @@ a {
         opacity: 0;
       }
     }
+  }
+  .arrow {
+    display: inline-block;
   }
 }
