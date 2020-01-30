@@ -98,9 +98,10 @@ a {
     width: 50%;
   }
 
-  &__item {
-    // font-variant-caps: small-caps;
-  }
+  // &__item {
+  // font-variant-caps: small-caps;
+  // }
+
   &--active {
     display: flex;
     // background-color: #fff;
@@ -301,7 +302,7 @@ a {
       }
     }
   }
-  .arrow {
+  .arrow a {
     display: inline-block;
   }
 }

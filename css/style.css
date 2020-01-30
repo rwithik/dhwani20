@@ -312,7 +312,7 @@ a {
             transform: translateY(0);
     opacity: 0;
   }
-  .arrow {
+  .arrow a {
     display: inline-block;
   }
 }
