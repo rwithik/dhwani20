@@ -91,3 +91,8 @@ navItems.forEach(item => {
     navList.classList.remove("nav__list--open");
   });
 });
+
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (isMobile) {
+  document.location = "mobile.html";
+}
