@@ -52,6 +52,23 @@
  */
 
 (function($) {
+  function paintArea(context, tx, ty) {
+    var toolSize = 3;
+    for (var spray = 0, len = toolSize * 100; spray < len; spray++) {
+      var angle = Math.random() * Math.PI * 2;
+      var radius = Math.random() * toolSize * 25;
+
+      context.beginPath();
+      context.arc(
+        tx + Math.cos(angle) * radius,
+        ty + Math.sin(angle) * radius,
+        false ? toolSize : 0.5 + Math.floor(Math.random() * 1),
+        0,
+        Math.PI * 2
+      );
+      context.fill();
+    }
+  }
   var methods = {
     init: function(options) {
       return this.each(function() {
@@ -210,19 +227,19 @@
             tx *= data.scaleRatio;
             ty *= data.scaleRatio;
 
-            if (data.enabled) {
-              methods.evaluatePoint(data, tx, ty);
-              data.ctx.beginPath();
-              data.ctx.moveTo(data.touchX, data.touchY);
-              data.ctx.lineTo(tx, ty);
-              data.ctx.stroke();
-              $this.css({
-                "z-index":
-                  $this.css("z-index") == data.zIndex
-                    ? parseInt(data.zIndex) + 1
-                    : data.zIndex
-              });
-            }
+            // if (data.enabled) {
+            //   methods.evaluatePoint(data, tx, ty);
+            //   data.ctx.beginPath();
+            //   data.ctx.moveTo(data.touchX, data.touchY);
+            //   data.ctx.lineTo(tx, ty);
+            //   data.ctx.stroke();
+            //   $this.css({
+            //     "z-index":
+            //       $this.css("z-index") == data.zIndex
+            //         ? parseInt(data.zIndex) + 1
+            //         : data.zIndex
+            //   });
+            // }
 
             data.touchX = tx;
             data.touchY = ty;
@@ -238,17 +255,17 @@
       var $this = $(this),
         data = $this.data("eraser");
 
-      if (data.touchDown) {
-        var ta = event.originalEvent.changedTouches,
-          n = ta.length;
-        while (n--) {
-          if (ta[n].identifier == data.touchID) {
-            data.touchDown = false;
-            event.preventDefault();
-            break;
-          }
-        }
-      }
+      // if (data.touchDown) {
+      //   var ta = event.originalEvent.changedTouches,
+      //     n = ta.length;
+      //   while (n--) {
+      //     if (ta[n].identifier == data.touchID) {
+      //       data.touchDown = false;
+      //       event.preventDefault();
+      //       break;
+      //     }
+      //   }
+      // }
     },
 
     evaluatePoint: function(data, tx, ty) {
@@ -283,14 +300,15 @@
       data.touchX = tx;
       data.touchY = ty;
 
-      if (data.enabled) {
-        methods.evaluatePoint(data, tx, ty);
+      // if (data.enabled) {
+      //   methods.evaluatePoint(data, tx, ty);
 
-        data.ctx.beginPath();
-        data.ctx.moveTo(data.touchX - 1, data.touchY);
-        data.ctx.lineTo(data.touchX, data.touchY);
-        data.ctx.stroke();
-      }
+      //   data.ctx.beginPath();
+      //   data.ctx.moveTo(data.touchX - 1, data.touchY);
+      //   data.ctx.lineTo(data.touchX, data.touchY);
+      //   data.ctx.stroke();
+      // }
+      paintArea(data.ctx, tx, ty);
 
       $this.bind("mousemove.eraser", methods.mouseMove);
       $(document).bind("mouseup.eraser", data, methods.mouseUp);
@@ -305,19 +323,23 @@
       tx *= data.scaleRatio;
       ty *= data.scaleRatio;
 
-      if (data.enabled) {
-        methods.evaluatePoint(data, tx, ty);
-        data.ctx.beginPath();
-        data.ctx.moveTo(data.touchX, data.touchY);
-        data.ctx.lineTo(tx, ty);
-        data.ctx.stroke();
-        $this.css({
-          "z-index":
-            $this.css("z-index") == data.zIndex
-              ? parseInt(data.zIndex) + 1
-              : data.zIndex
-        });
-      }
+      //CODE 47 drag code
+      // if (data.enabled) {
+      //   methods.evaluatePoint(data, tx, ty);
+      //   data.ctx.beginPath();
+      //   data.ctx.moveTo(data.touchX, data.touchY);
+      //   data.ctx.lineTo(tx, ty);
+      //   data.ctx.stroke();
+      //   $this.css({
+      //     "z-index":
+      //       $this.css("z-index") == data.zIndex
+      //         ? parseInt(data.zIndex) + 1
+      //         : data.zIndex
+      //   });
+      // }
+
+      //This is the place where we are spraying the paint..Feel free to make changes
+      paintArea(data.ctx, tx, ty);
 
       data.touchX = tx;
       data.touchY = ty;

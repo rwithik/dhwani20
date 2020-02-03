@@ -31,10 +31,18 @@
       href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"
       rel="stylesheet"
     />
+    <script type="text/javascript">
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (isMobile) {
+        console.log("You are using Mobile");
+      } else {
+        console.log("You are using Desktop");
+      }
+    </script>
     <title>Dhwani 20</title>
   </head>
   <body>
-    <div id="lottie"></div>
+    <!-- <div id="lottie"></div> -->
     <div class="background"></div>
 
     <nav class="nav">
@@ -66,12 +74,20 @@
         class="wall wall--plain"
       />
       <span class="arrow"><a href="#logo">Explore</a></span>
+      <!-- <div class="landing__logo">
+        <img
+          src="./images/dhwani20ogodate.png"
+          alt=""
+          class="landing__logo-img"
+        />
+      </div> -->
     </section>
+
     <script src="./js/animation.js"></script>
 
     <section class="logo" id="logo">
       <!-- <img src="./images/logo.gif" alt="" class="logo__gif" /> -->
-      <img src="./images/dhwani20logo.png" alt="" class="logo__img" />
+      <img src="./images/dhwani20ogodate.png" alt="" class="logo__img" />
     </section>
     <section class="workshops" id="workshops">
       <h2 class="section__title section__title--ws">Workshops</h2>
