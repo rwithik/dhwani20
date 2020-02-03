@@ -134,6 +134,10 @@ a {
 //   display: none;
 // }
 
+.toast {
+  display: none;
+}
+
 .landing {
   height: 100vh;
   max-height: 100vh;
@@ -224,7 +228,7 @@ a {
   &__gif,
   &__img {
     display: block;
-    height: 100vh;
+    height: 80vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -394,5 +398,37 @@ a {
   // }
   .arrow a {
     display: inline-block;
+  }
+
+  .toast {
+    font-family: "Lato", "sans-serif";
+    height: fit-content;
+    text-align: center;
+    font-size: 0.8rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 400ms ease-in-out;
+
+    &__content {
+      padding: 0 0.5rem;
+    }
+
+    &__close {
+      all: unset;
+      cursor: pointer;
+      padding: 0 0.5rem;
+      height: 100%;
+    }
   }
 }

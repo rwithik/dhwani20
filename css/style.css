@@ -145,6 +145,10 @@ a {
   color: gold;
 }
 
+.toast {
+  display: none;
+}
+
 .landing {
   height: 100vh;
   max-height: 100vh;
@@ -218,7 +222,7 @@ a {
 
 .logo__gif, .logo__img {
   display: block;
-  height: 100vh;
+  height: 80vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -340,6 +344,52 @@ a {
   }
   .arrow a {
     display: inline-block;
+  }
+  .toast {
+    font-family: "Lato", "sans-serif";
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-align: center;
+    font-size: 0.8rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 1rem;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-transition: -webkit-transform 400ms ease-in-out;
+    transition: -webkit-transform 400ms ease-in-out;
+    transition: transform 400ms ease-in-out;
+    transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+  }
+  .toast__content {
+    padding: 0 0.5rem;
+  }
+  .toast__close {
+    all: unset;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

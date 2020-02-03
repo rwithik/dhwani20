@@ -209,6 +209,7 @@
         data.touchID = t.identifier;
         data.touchX = tx;
         data.touchY = ty;
+        paintArea();
         event.preventDefault();
       }
     },
@@ -243,7 +244,7 @@
 
             data.touchX = tx;
             data.touchY = ty;
-
+            paintArea();
             event.preventDefault();
             break;
           }
@@ -254,13 +255,14 @@
     touchEnd: function(event) {
       var $this = $(this),
         data = $this.data("eraser");
-
+      $this.unbind("touchMove.eraser");
+      $(document).unbind("touchEnd.eraser");
+      data.touchDown = false;
       // if (data.touchDown) {
       //   var ta = event.originalEvent.changedTouches,
       //     n = ta.length;
       //   while (n--) {
       //     if (ta[n].identifier == data.touchID) {
-      //       data.touchDown = false;
       //       event.preventDefault();
       //       break;
       //     }
