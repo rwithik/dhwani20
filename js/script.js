@@ -51,7 +51,7 @@ const landingObserver = new IntersectionObserver(
         nav.classList.add("nav--active");
       }
     });
-  }
+  } //,
   // {
   // rootMargin: "-100px"
   // }

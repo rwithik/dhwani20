@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      #lottie {
+        background-color: #fff;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: block;
+        overflow: hidden;
+        transform: translate3d(0, 0, 0);
+        text-align: center;
+        opacity: 1;
+        z-index: 100;
+        position: fixed;
+      }
+    </style>
     <link rel="stylesheet" href="./dist/css/style.min.css" />
 
     <link
@@ -11,12 +27,16 @@
       rel="stylesheet"
     />
 
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Dhwani 20</title>
   </head>
   <body>
+    <div id="lottie"></div>
     <div class="background"></div>
+
     <nav class="nav">
       <img src="./images/dhwani20logo.png" alt="" class="nav__logo" />
       <button class="hamburger__toggle">
@@ -38,7 +58,7 @@
       </ul>
     </nav>
     <section class="landing">
-      <img src="./images/wall art.jpg" alt="" id="" class="wall wall--filled" />
+      <img src="" alt="" id="wall-plain" class="wall wall--filled" />
       <img
         src="./images/wall art blank.jpg"
         alt=""
@@ -47,6 +67,8 @@
       />
       <span class="arrow"><a href="#logo">Explore</a></span>
     </section>
+    <script src="./js/animation.js"></script>
+
     <section class="logo" id="logo">
       <!-- <img src="./images/logo.gif" alt="" class="logo__gif" /> -->
       <img src="./images/dhwani20logo.png" alt="" class="logo__img" />
