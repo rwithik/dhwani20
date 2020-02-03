@@ -92,7 +92,9 @@ navItems.forEach(item => {
   });
 });
 
-var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+var isMobile =
+  /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ||
+  window.innerWidth < 500;
 // if (isMobile) {
 //   document.location = "mobile.html";
 // }
