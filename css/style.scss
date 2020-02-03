@@ -316,6 +316,60 @@ a {
   }
 }
 
+.section__container--ws {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cards__container {
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  width: 80%;
+  height: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card {
+  max-height: 40vh;
+  height: 100%;
+  margin: 1rem;
+  width: 400px;
+  border: 1px solid rgba(white, 0.6);
+  border-radius: 5px;
+
+  &__image {
+    height: 100%;
+    display: flex;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #fcfcfc;
+    // padding: 0.5rem;
+    font-family: "Lato", "sans-serif";
+  }
+
+  &__img {
+    height: 100%;
+    width: auto;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .coming-soon {
     font-size: 2em;
