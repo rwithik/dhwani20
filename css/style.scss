@@ -345,8 +345,9 @@ a {
   height: 100%;
   margin: 1rem;
   width: 180px;
-  border: 1px solid rgba(white, 0.6);
-  border-radius: 5px;
+  // border: 1px solid rgba(white, 0.6);
+  // border-radius: 5px;
+  padding: 0 1.2rem;
 
   &__image {
     height: 100%;
