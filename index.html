@@ -80,6 +80,17 @@
         />
       </div> -->
     </section>
+    <script>
+      var isMobile =
+        /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ||
+        window.innerWidth < 600;
+
+      if (isMobile) {
+        console.log("so");
+
+        document.querySelector(".landing").style.display = "none";
+      }
+    </script>
 
     <script src="./js/animation.js"></script>
 

@@ -92,25 +92,9 @@ navItems.forEach(item => {
   });
 });
 
-var isMobile =
-  /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ||
-  window.innerWidth < 500;
-// if (isMobile) {
-//   document.location = "mobile.html";
-// }
-
 const toastClose = document.querySelector(".toast__close");
 const toast = document.querySelector(".toast");
 
 toast.addEventListener("click", () => {
   toast.style.display = "none";
 });
-
-// const showToast = () => {
-//   toast.style.transform = "transform(-50%,0)";
-// };
-
-if (isMobile) {
-  document.querySelector(".landing").style.display = "none";
-  // showToast();
-}
