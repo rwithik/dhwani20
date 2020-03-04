@@ -2,108 +2,361 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Dhwani'20</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <style>
+      #lottie {
+        background-color: #fff;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: block;
+        overflow: hidden;
+        transform: translate3d(0, 0, 0);
+        text-align: center;
+        opacity: 1;
+        z-index: 100;
+        position: fixed;
+      }
+
+      .alert {
+        width:150px;
+        height: 70px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: rgba(255,255,255, .7);
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      .link {
+        text-decoration: underline;
+        color: blue;
+      }
+
+      .link:hover {
+        color: rgba(86, 191, 236, 0.975);
+      }
+
+      .contacts {
+        display: flex; 
+        justify-content: space-evenly; 
+      }
+
+      @media screen and (max-width: 992px) {
+        
+        .contacts {
+          display: flex; 
+          justify-content: space-evenly; 
+          flex-direction: column;
+          font-size: 10px;
+        }
+
+        .contacts div {
+          margin-top: 20px;
+        }
+
+      }
+
+
+    </style>
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
+
     <link
+      href="https://fonts.googleapis.com/css?family=Bangers|Raleway&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
     />
-    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dhwani 20</title>
   </head>
-
   <body>
-    <div id="fullpage">
-      <div id="particles-js"></div>
-      <div class="section" id="section0">
-        <script src="./dist/three.r95.min.js"></script>
-        <script src="./dist/vanta.birds.min.js"></script>
-        <script>
-          VANTA.BIRDS({
-            el: "#particles-js",
-            mouseControls: true,
-            touchControls: true,
-            minHeight: 200.0,
-            minWidth: 200.0,
-            scale: 1.0,
-            scaleMobile: 1.0,
-            backgroundAlpha: 0.91,
-            speedLimit: 3
-          });
-        </script>
-
-        <img class="landing__logo" src="./images/dhwani20logo.png" alt="" />
-        <div class="date-year">
-          <div class="landing__date">
-            <p>March</p>
-            <p>12,13,14,15</p>
-          </div>
-          <div class="landing__year">
-            <h1>20</h1>
-          </div>
-        </div>
-        <div class="landing__college">
-          <p>College of Engineering Trivandrum</p>
-        </div>
-        <div class="landing__dhwani">
-          <h1>DHWANI</h1>
-        </div>
-      </div>
-
-      <div class="section section--about" id="section1">
-        <div class="intro-about">
-          <h1>ABOUT</h1>
-        </div>
-        <div class="about-description">
-          <p>"Great things have a humble beginning". From what started as a</p>
-          <p>
-            part of CETEX back in 1999 to a fully fledged 3 day fest with
-            various competitions,
-          </p>
-          <p>
-            workshops and many such events focussed on arts and culture, Dhwani
-            has become
-          </p>
-          <p>
-            one of the biggest cultral fests in South India and rightly lived up
-            to this little titile since
-          </p>
-          <p>
-            the last few years. Since this year marks CET's 80th anniversary, we
-            aim to organize
-          </p>
-          <p>
-            Dhwani in the most marvelous and ambitios way, making it reach the
-            epitome of its
-          </p>
-          <p>
-            legacy and set a whole new standard for cultral fests held in India.
-            With numerous
-          </p>
-          <p>
-            events packaged with a lot pf alluring experiences and a large
-            crowd, our vision for
-          </p>
-          <p>Dhwani'20 is here to raise the bar to and achieve new highs.</p>
-        </div>
-      </div>
-      <div class="section" id="section2">
-        <div class="intro-events">
-          <h1>EVENTS</h1>
-        </div>
-      </div>
-      <div class="section" id="section3">
-        <div class="intro">
-          <h1>Page 4</h1>
-        </div>
-      </div>
-      <div class="section" id="section4">
-        <div class="intro">
-          <h1>Page 5</h1>
-        </div>
-      </div>
+    <div class="toast">
+      <span class="toast__content"
+        >Use the site on a desktop for a better experience</span
+      ><button class="toast__close">X</button>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="https://tgomilar.github.io/paroller.js/dist/jquery.paroller.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
-    <script src="./script.js"></script>
+    <div id="lottie"></div>
+    <div class="alert"><a class="link" href="https://www.townscript.com/e/festival-pass-110121">Grab your festival pass here!</a></div>
+    <div class="background"></div>
+
+    <nav class="nav">
+      <img src="./images/dhwani20logo.png" alt="" class="nav__logo" />
+      <button class="hamburger__toggle">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#workshops">Workshops</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#events">Events</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#proshows">Proshow</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="landing">
+      <img src="" alt="" id="wall-plain" class="wall wall--filled" />
+      <img
+        src="./images/wall art blank.jpg"
+        alt=""
+        id="wall"
+        class="wall wall--plain"
+      />
+      <span class="arrow"><a href="#logo">Explore</a></span>
+      <div class="landing__logo">
+        <img
+          src="./images/dhwani20ogodate.png"
+          alt=""
+          class="landing__logo-img"
+        />
+      </div>
+    </section>
+    <script>
+      var isMobile =
+        /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ||
+        window.innerWidth < 600;
+
+      if (isMobile) {
+        console.log("so");
+
+        document.querySelector(".landing").style.display = "none";
+      }
+    </script>
+
+    <script src="./js/animation.js"></script>
+
+    <section class="logo" id="logo">
+      <!-- <img src="./images/logo.gif" alt="" class="logo__gif" /> -->
+      <img src="./images/dhwani20ogodate.png" alt="" class="logo__img" />
+    </section>
+    <section class="workshops" id="workshops">
+      <h2 class="section__title section__title--ws">Workshops</h2>
+      <div class="section__container section__container--ws">
+        <div class="cards__container">
+          <div class="card">
+            <a
+              href="https://www.townscript.com/e/dhwani-20-drone-development-workshop-410122"
+              class="card__link"
+            >
+              <div class="card__image">
+                <img src="./images/dronews.jpg" alt="" class="card__img" />
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a
+              href="https://www.townscript.com/e/dhwani20-third-eye-ws"
+              class="card__link"
+            >
+              <div class="card__image">
+                <img src="./images/thirdeye.jpeg" alt="" class="card__img" />
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a
+              href="https://www.townscript.com/e/dhwani20-game-ws"
+              class="card__link"
+            >
+              <div class="card__image">
+                <img src="./images/gamedev.jpg" alt="" class="card__img" />
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a
+              href="https://www.townscript.com/e/dhwani20-lora-ws"
+              class="card__link"
+            >
+              <div class="card__image">
+                <img src="./images/lora.jpg" alt="" class="card__img" />
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a
+              href="https://www.townscript.com/e/dhwani20-qc-ws"
+              class="card__link"
+            >
+              <div class="card__image">
+                <img src="./images/qc.jpeg" alt="" class="card__img" />
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a
+              href="https://www.townscript.com/e/dhwani20-ar-arduino-ws"
+              class="card__link"
+            >
+              <div class="card__image">
+                <img src="./images/arduino.jpeg" alt="" class="card__img" />
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a
+              href="https://www.townscript.com/e/dhwani20-ansys-ws"
+              class="card__link"
+            >
+              <div class="card__image">
+                <img src="./images/ansys.jpg" alt="" class="card__img" />
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a
+              href="https://www.townscript.com/e/dhwani20-vd-ws"
+              class="card__link"
+            >
+              <div class="card__image">
+                <img src="./images/vd.jpeg" alt="" class="card__img" />
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://www.townscript.com/e/dhwani20-eh-ws"
+              class="card__link"
+            >
+              <div class="card__image">
+                <img src="./images/hacking.jpg" alt="" class="card__img" />
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://www.townscript.com/e/dhwani20-rpa-ws"
+              class="card__link"
+            >
+              <div class="card__image">
+                <img src="./images/robotic.jpg" alt="" class="card__img" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="events" id="events">
+      <h2 class="section__title section__title--events">Competitions</h2>
+      <div class="section__container section__container--ws">
+        <div class="cards__container">
+          <div class="card">
+            <a href="https://www.townscript.com/e/choreonite-402441">
+            <div class="card__image">
+              <img src="./images/choreonite.jpg" alt="" class="card__img" />
+            </div>
+          </a>
+          </div>
+          <div class="card">
+            <a
+              href="https://www.townscript.com/e/rangam-short-film-competition-442224"
+              class="card__link"
+            >
+              <div class="card__image">
+                <img src="./images/rangam.jpeg" alt="" class="card__img" />
+              </div>
+            </a>
+
+           
+          </div>
+          <div class="card">
+            <a
+              href="https://www.townscript.com/e/antara-presents-unplugged-031203"
+              class="card__link"
+            >
+            <div class="card__image">
+              <img src="./images/unplugged.jpg" alt="" class="card__img" />
+            </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="https://www.townscript.com/e/antara-presents-reverberation-band-war-044123">
+            <div class="card__image">
+              <img src="./images/bandwar.jpg" alt="" class="card__img" />
+            </div>
+          </a>
+            
+          </div>
+
+          <div class="card">
+            <a href="https://www.townscript.com/e/dhwani-idol-203341">
+            <div class="card__image">
+              <img src="./images/dhwaniidol.JPG" alt="" class="card__img" />
+            </div>
+          </a>
+            <!-- <div class="card__title">Drone Workshop</div> -->
+          </div>
+          <!-- <div class="card">
+            <div class="card__image">
+              <img src="./images/dronews.jpg" alt="" class="card__img" />
+            </div>
+            <div class="card__title">Drone Workshop</div>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/dronews.jpg" alt="" class="card__img" />
+            </div>
+            <div class="card__title">Drone Workshop</div>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/dronews.jpg" alt="" class="card__img" />
+            </div>
+            <div class="card__title">Drone Workshop</div>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="./images/dronews.jpg" alt="" class="card__img" />
+            </div>
+            <div class="card__title">Drone Workshop</div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <section class="proshows" id="proshows">
+      <h2 class="section__title section__title--proshows">Proshows</h2>
+      <div class="section__container">
+        <h2 class="coming-soon">Coming Soon</h2>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="section__title section__title--contact">Contact Us</h2>
+
+      <div class="contacts">
+        <div style="color: cornsilk;">
+          <h2 class="coming-soon">ABHIRAM JR</h2>
+          <h2 class="coming-soon">9847488094</h2>
+        </div>
+  
+        <div style="color: cornsilk;">
+          <h2 class="coming-soon">VISHNU UV</h2>
+          <h2 class="coming-soon">9995953166</h2>
+        </div>
+      </div>
+
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.eraser.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
