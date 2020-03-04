@@ -20,6 +20,49 @@
         z-index: 100;
         position: fixed;
       }
+
+      .alert {
+        width:150px;
+        height: 70px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: rgba(255,255,255, .7);
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      .link {
+        text-decoration: underline;
+        color: blue;
+      }
+
+      .link:hover {
+        color: rgba(86, 191, 236, 0.975);
+      }
+
+      .contacts {
+        display: flex; 
+        justify-content: space-evenly; 
+      }
+
+      @media screen and (max-width: 992px) {
+        
+        .contacts {
+          display: flex; 
+          justify-content: space-evenly; 
+          flex-direction: column;
+          font-size: 10px;
+        }
+
+        .contacts div {
+          margin-top: 20px;
+        }
+
+      }
+
+
     </style>
     <link rel="stylesheet" href="./dist/css/style.min.css" />
 
@@ -41,6 +84,7 @@
       ><button class="toast__close">X</button>
     </div>
     <!-- <div id="lottie"></div> -->
+    <div class="alert"><a class="link" href="https://www.townscript.com/e/festival-pass-110121">Grab your festival pass here!</a></div>
     <div class="background"></div>
 
     <nav class="nav">
@@ -293,6 +337,19 @@
     </section>
     <section class="contact" id="contact">
       <h2 class="section__title section__title--contact">Contact Us</h2>
+
+      <div class="contacts">
+        <div style="color: cornsilk;">
+          <h2 class="coming-soon">ABHIRAM JR</h2>
+          <h2 class="coming-soon">9847488094</h2>
+        </div>
+  
+        <div style="color: cornsilk;">
+          <h2 class="coming-soon">VISHNU UV</h2>
+          <h2 class="coming-soon">9995953166</h2>
+        </div>
+      </div>
+
     </section>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
